@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 250px;
+        height: 250px;
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: repeat(4,250px);
+        grid-template-rows: 300px 300px 300px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .pieces{
+        display: flex;
+    }
+    button{
+        width: 50px;
+        height: 30px;
+    }
+</style>
+<body>
+    <button class="back">back</button>
+    <div class="blocks"></div>
+    <script src="basket.js"></script>
+</body>
+</html>

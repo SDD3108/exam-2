@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: 200px 200px 200px;
+        row-gap: 30px;
+        column-gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section__bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 0;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <section class="section">
+        <div class="section__top">
+            <div class="menu">
+                <button class="home"><a href="">home</a></button>
+                <button class="basket">Basket</button>
+                <button class="account">account</button>
+            </div>
+        </div>
+        <div class="section__bottom">
+            <div class="searching">
+                <input type="search" class="search">
+                <button class="btn">search</button>  
+            </div>
+            <div class="block-select">
+                <select class="select">
+                    <option>По Умолчанию</option>
+                    <option>По Нарастанию цены</option>
+                    <option>По Убыванию цены</option>
+                </select>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    
+    
+
+    <div class="blocks"></div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
